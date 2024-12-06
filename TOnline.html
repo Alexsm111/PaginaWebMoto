@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Venta de Motos y Accesorios</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+
+        .buy-btn {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: #cc5200;
+        }
+
+        .section-divider {
+            margin: 40px 0;
+            border-top: 2px solid #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #222;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-white mb-0">Tienda online</h1>
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+                <a href="SNosotros.html" class="text-white text-decoration-none">Sobre Nosotros</a>
+                <a href="TOnline.html" class="text-white text-decoration-none">Tienda Online</a>
+                <a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Sección de Motos -->
+        <section>
+            <h2>Nuestras Motos</h2>
+            <p>Encuentra la moto que más se adapta a ti y comienza a vivir la aventura de tu vida con nuestras opciones.</p>
+            <div class="products">
+                <div class="product-card">
+                    <img src="./imagenes/ktmduke.png" alt="KTM Duke">
+                    <h3>KTM Duke</h3>
+                    <p>La compañera ideal para la ciudad y el campo, llena de estilo y potencia.</p>
+                    <div class="price">$5,000</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/GIXXERSF150.png" alt="Suzuki GIXXERSF150">
+                    <h3>Suzuki GIXXER SF150</h3>
+                    <p>Deportiva y ágil, diseñada para disfrutar al máximo de cada viaje.</p>
+                    <div class="price">$7,000</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/KawasakyNinja.png" alt="Kawasaki Ninja">
+                    <h3>Kawasaki Ninja</h3>
+                    <p>Un ícono atemporal con gran potencia y estilo incomparable.</p>
+                    <div class="price">$9,000</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/NC750x.png" alt="Honda NC750X">
+                    <h3>Honda NC750X</h3>
+                    <p>Comodidad y potencia para los aventureros de corazón.</p>
+                    <div class="price">$9,000</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/BMWmoto.png" alt="BMW Touring">
+                    <h3>BMW Touring</h3>
+                    <p>Viajes largos con el máximo lujo y rendimiento.</p>
+                    <div class="price">$8,000</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/suzukigsx.png" alt="Mitt GP">
+                    <h3>Mitt GP</h3>
+                    <p>Diseñada para el piloto moderno con un toque de adrenalina.</p>
+                    <div class="price">$7,000</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Sección de Accesorios -->
+        <section>
+            <h2>Accesorios para Motocicletas</h2>
+            <p>Completa tu experiencia con nuestra selección de accesorios de alta calidad.</p>
+            <div class="products">
+                <div class="product-card">
+                    <img src="./imagenes/casco-m-pro-race.png" alt="Casco de Motocicleta">
+                    <h3>Casco Integral</h3>
+                    <p>Protección total con diseño aerodinámico y ventilación.</p>
+                    <div class="price">$200</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/guantesmoto.png" alt="Guantes de Motocicleta">
+                    <h3>Guantes de Cuero</h3>
+                    <p>Comodidad y agarre perfecto, diseñados para largas distancias.</p>
+                    <div class="price">$50</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/correa-demoto-dayco.png" alt="Correa Moto">
+                    <h3>Correa Moto</h3>
+                    <p>Durabilidad y resistencia para una conducción segura.</p>
+                    <div class="price">$500</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/manillarmoto22mm.png" alt="Manillar Moto">
+                    <h3>Manillar</h3>
+                    <p>Mejor agarre para una conducción precisa y cómoda.</p>
+                    <div class="price">$300</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/ruedamoto.png" alt="Rueda Moto">
+                    <h3>Rueda Moto</h3>
+                    <p>Máxima adherencia y durabilidad en carretera.</p>
+                    <div class="price">$150</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+                <div class="product-card">
+                    <img src="./imagenes/vinilomoto.png" alt="Vinilo Moto">
+                    <h3>Vinilo Moto</h3>
+                    <p>Pegatinas ideales para personalizar tu motocicleta.</p>
+                    <div class="price">$30</div>
+                    <button class="buy-btn">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Venta de Motos y Accesorios. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

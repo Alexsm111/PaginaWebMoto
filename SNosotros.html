@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Venta de Motos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff6600;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* Media y video */
+        .media-content {
+            margin: 30px 0;
+        }
+
+        audio, video {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 800px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Valores de la compañía */
+        .company-values {
+            margin: 40px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .value-item {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .value-item img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .value-item h3 {
+            margin: 10px 0;
+            color: #ff6600;
+        }
+
+        .value-item p {
+            color: #555;
+        }
+
+        /* Testimonios */
+        .testimonials {
+            margin: 40px 0;
+        }
+
+        .testimonial-item {
+            background-color: #fffbf2;
+            border: 1px solid #ffebcc;
+            border-radius: 8px;
+            margin: 20px auto;
+            padding: 15px;
+            max-width: 700px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-item p {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .testimonial-item strong {
+            display: block;
+            text-align: right;
+            color: #ff6600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="text-white mb-0">Venta de Motos</h1>
+            <nav class="d-flex gap-3">
+                <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+                <a href="SNosotros.html" class="text-white text-decoration-none">Sobre Nosotros</a>
+                <a href="TOnline.html" class="text-white text-decoration-none">Tienda Online</a>
+                <a href="contacto.html" class="text-white text-decoration-none">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about-us">
+        <div class="content-container">
+            <h1>Nuestra Historia</h1>
+            <p>Somos una empresa dedicada a la venta de motocicletas desde hace más de 20 años. Con un enfoque en la calidad, la atención al cliente y la pasión por el mundo de las motos, hemos crecido hasta convertirnos en un referente en el sector. Nuestro compromiso es ofrecer las mejores motocicletas a los mejores precios, asegurando siempre la satisfacción de nuestros clientes.</p>
+
+            <div class="media-content">
+                <!-- Elemento de audio -->
+                <h2>Disfruta de nuestra música ambiental</h2>
+                <audio controls autoplay loop>
+                    <source src="./media/musica-ambiental.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+
+                <!-- Elemento de video -->
+                <h2>Conoce nuestros productos en acción</h2>
+                <video controls autoplay muted loop poster="./imagenes/video-placeholder.jpg">
+                    <source src="./media/motos-en-accion.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+
+            <div class="company-values">
+                <h2>Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <img src="./imagenes/acalidad.png" alt="Icono de calidad">
+                        <h3>Calidad</h3>
+                        <p>Nos aseguramos de que todos nuestros productos cumplan con los más altos estándares de calidad.</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="./imagenes/acliente.png" alt="Icono de servicio al cliente">
+                        <h3>Atención al Cliente</h3>
+                        <p>Nos enorgullece ofrecer un servicio al cliente excepcional, siempre disponibles para ayudarte.</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="./imagenes/marketing.png" alt="Icono de experiencia">
+                        <h3>Experiencia</h3>
+                        <p>Con más de dos décadas en el mercado, conocemos bien las necesidades de nuestros clientes.</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="./imagenes/pasion.png" alt="Icono de pasión">
+                        <h3>Pasión</h3>
+                        <p>Somos apasionados por las motos y compartimos esa pasión con cada uno de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <div class="testimonial-item">
+                    <p>"La experiencia de compra fue increíble. El equipo me ayudó a encontrar la moto perfecta y la entrega fue rápida. ¡Definitivamente recomiendo Venta de Motos!"</p>
+                    <strong>- Juan Pérez</strong>
+                </div>
+                <div class="testimonial-item">
+                    <p>"La calidad de las motocicletas es insuperable. Estoy encantado con mi nueva adquisición, y el proceso de financiamiento fue muy accesible."</p>
+                    <strong>- María García</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Venta de Motos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
